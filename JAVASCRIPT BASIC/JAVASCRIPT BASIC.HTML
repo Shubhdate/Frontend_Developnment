@@ -1,0 +1,2582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!--<script type="text/javascipt" src="#"></script>-->
+
+    <!-- basic js text
+    <script>
+        console.log("Hello World");
+        console.log("Hello World");
+        console.log("Hello World");
+        console.log("Hello World");
+        console.log("Hello World");
+    </script>-->
+
+    <p id="idmethod"></p>
+
+    <!-- for testing pupose
+    <script>
+        document.getElementById("idmethod").innerHTML = 10 + 170;
+    </script>
+
+    <script>
+        document.write(20+10);
+    </script>
+
+    <button type="button" onclick="document.write(2738+10);" name="button">Add it</button> this one delete all html used for testing only
+
+    this one show output as alert type used for showimg output
+    <script>
+        window.alert(30+70);
+    </script>
+
+
+    show in console only for testing
+    <script>
+        console.log("this is king");
+    </script>
+
+    a direct method for printhing the window page 
+    <button onclick="window.print()">Print this page</button>-->
+
+
+    <!--statements
+        
+        always connect the code with id for output if not them we can never see output
+         ; we can also do all arithemeatic operations in it
+    <p id="total"></p>
+    <script>
+        var x,y,z,add;
+        x = 100;
+        y = 20;
+        z = 30;
+        add = x + y + z ;
+        document.getElementById("total").innerHTML = "the value is = " + add;
+    </script>-->
+
+
+    <!-- variables 
+    this will show in console in
+    <script>
+        var x = 100;
+        var y = 60;
+        var add = x + y;
+
+        console.log(add);
+    </script>-->
+
+
+    <!-- let 
+        same as variables
+    <script>
+        let x = 2;
+        let y = 5;
+        let add = x + y;
+        console.log(add);
+    </script>-->
+
+    <!--const
+        here values has assign is change to different value 
+        eg. car is black change to red
+    <script>
+        const car = {
+            type:"BMW", model:"Black car", color:"black"
+        };
+        car.color = "red";
+        console.log(car);
+    </script>-->
+
+
+    <!--operatores
+    <script>
+        var x = 56;
+        var y = 76;
+        var z = x * y;
+        console.log(z);
+    </script>-->
+
+    <!--function
+        after function we have to write console
+    <script>
+        function samplename (x , y){
+        return x = y;
+    }
+    console.log(samplename);
+    </script>-->
+
+
+    <!--objects
+    used for storing an information 
+    <script>
+        var car = {
+            make: "BMW",
+            model: "Black car",
+            year: "2022",
+            color: "blue"
+        }
+        console.log(car);
+    </script>-->
+
+    <!--events
+    <button onclick="this.innerHTML = Date()">The Date and time is :</button>-->
+
+
+    <!--strings
+        stores information
+    <script>
+        var x = "BMW CAR";
+        var a = 'ford';
+
+        var b = x.length; // we can get to know about lenght of words
+
+        console.log(x);
+        console.log(a);
+        console.log(b);
+    </script>-->
+
+
+    <!--string mthods
+    <script>
+        var x = "this is some text";
+        var a = x.search("some"); //used for searching text
+        var b = x.slice(15); //finding text by number
+
+        console.log(x);
+        console.log(a);
+        console.log(b);
+    </script>-->
+
+
+    <!--numbers
+    <script>
+        var x = 5.678;
+        var y = 8368.288;
+        var a = 8363.826;
+        var b = 666;
+        var z = x - y * a * b;
+
+        console.log(z);
+    </script>-->
+
+
+    <!--number methods
+    <script>
+        var x = 233;
+        x.toString();
+        (233).toString();
+        (100 + 133).toString();
+
+
+        var y = 3.145;
+        y.toFixed(0);
+        y.toFixed(2);
+        y.toFixed(4);
+        y.toFixed(6);
+
+        console.log(x);
+        console.log(y);
+    </script>-->
+
+
+    <!--arrays
+    namy values in a single name
+    <script>
+        var cars = ["bmw", "audi","ford","king"];
+
+        console.log(cars);
+    </script>-->
+
+
+    <!-- array methods
+    <script>
+        //arrays to strings by poping and pushing is
+        var cars = ["bmw", "audi","ford","king"];
+
+        cars.pop("bmw"); //pop last element or just define the element to pop
+        cars.push("mercedes");
+        cars.push("lambo");
+
+        console.log(cars);
+    </script>-->
+
+
+    <!--sort array
+    <script>
+        var cars = ["bmw", "audi","ford","king"];
+        cars.sort(); // sort by alphabetical oredr here 
+        cars.reverse();// reverse the oreder
+        console.log(cars);
+    </script>-->
+
+
+    <!--dates
+   <script>
+       var d = new Date();// tels us date
+       console.log(d);
+
+       var a = new Date(2022,1,1,18,22,33,0);// specify date we had made now
+       console.log(a);
+   </script>-->
+
+
+   <!--get methods
+   <script>
+       var d = new Date();
+       console.log(d.getFullYear());
+   </script>-->
+
+
+
+   <!--math
+   <script>
+       var x = Math.PI; //show value of pi here
+       console.log(x);
+   </script>
+
+   <p id="math"></p>
+   <script>
+       document.getElementById("math").innerHTML = Math.PI;
+   </script>-->
+
+
+   <!-- random
+    keeps generating random integers
+    <p id="math"></p>
+   <script>
+       document.getElementById("math").innerHTML = Math.floor(Math.random() * 100);
+   </script>
+
+    <script>
+        var x = Math.random() * 5;
+        console.log(x);
+    </script>-->
+
+
+
+    <!-- switch
+    <p id="switch"></p>
+    <script>
+        var day;
+        switch(new Date().getDay()){
+            case 0:
+            day = "sunday";
+            break;
+
+            case 1:
+            day = "monday";
+            break;
+
+            case 2:
+            day = "tuesday";
+            break;
+
+            case 3:
+            day = "wednesday";
+            break;
+
+            case 4:
+            day = "thursday";
+            break;
+
+            case 5:
+            day = "friday";
+            break;
+
+            case 6:
+            day = "saturday";
+        }
+        document.getElementById("switch").innerHTML = "today is" + day;
+    </script>-->
+
+
+    <!--loop for
+    <p id="name"></p>
+    <script>
+        var name = ["abc","bbc","cbc","dbc","ebc"];
+        var text = "";
+        var i;
+        for(i=0; i < name.length; i++){
+            text += name[i] + "<br>";
+        }
+        document.getElementById("name").innerHTML = text;
+    </script>-->
+
+
+
+    <!--while loop
+    <p id="while"></p>
+    <script>
+        var text = "";
+        var i = 0;
+        while(i < 10){
+            text += "<br> the number is" + i;
+            i++;
+        }
+        document.getElementById("while").innerHTML = text;
+    </script>-->
+
+
+
+    <!--break 
+        and its opposite is continue which do not stop
+    <p id="break"></p>
+    <script>
+        var text = "";
+        var i;
+        for(i=0; i < 10;i++){
+            if(i===4){
+                break;
+            }
+            text += "the number is" + i + "<br>";
+        }
+        document.getElementById("break").innerHTML = text;
+    </script>-->
+
+    <!-- regexp
+    <p id="regexp"></p>
+
+    <script>
+        var name = "this is my string";
+        var a = name.search("string");
+        document.getElementById("regexp").innerHTML = a;
+    </script>-->
+
+    <!-- replacing text
+        consider it in ref expression
+
+    <p id="replace">visit my website on google</p>
+    <button onclick="replacing()">click here</button>
+    <script>
+        function replacing(){
+            var str = document.getElementById("replace").innerHTML;
+            var txt = str.replace("on google","on my website");
+            document.getElementById("replace").innerHTML = txt;
+        }
+    </script>-->
+
+
+    <!--arrow function
+    <p id="arrowfunction"></p>
+
+    <script>
+        var hello;
+        hello = () => {
+            return "hello World";
+        }
+        document.getElementById("arrowfunction").innerHTML = hello();
+    </script>-->
+
+    <!--classes
+    <p id="classes"></p>
+    <script>
+        class Car{
+            constructor(name , year){
+                this.name = name;
+                this.name = year;
+            }
+        }
+        car = new Car("porsche" , 2022);
+        document.getElementById("classes").innerHTML = car.name + " " + car.year;
+    </script>-->
+
+
+<!-- object method
+    <p id="object"></p>
+    <script>
+        var name = {
+            firstname :  "john",
+            lastname : "doe",
+            id : 1234,
+
+            fullname : function(){
+                return this.firstname + " " + this.lastname;
+            }
+        };
+
+        document.getElementById("object").innerHTML = name.fullname();
+    </script>-->
+
+
+    <!--function
+    <p id="functions"></p>
+     <script>
+         var myfunction = new function[ "a", "b", "return a + b"];
+         document.getElementById("functions").innerHTML = myfunction(233,567,976);
+     </script>-->
+
+
+    <!--classes
+
+     <p id="classes"></p>
+     <script>
+         class car{
+             constructor(name , year){
+                 this.name = name;
+                 this.year = year;
+             }
+             age(){
+                 let date = new Date();
+                 return date.getFullYear() - this.year;
+             }
+         }
+
+         let mycar = new car("bmw", 2003);
+
+         document.getElementById("classes").innerHTML = " my car is" + " " + mycar.age() + " years old";
+     </script>-->
+
+
+
+<!--inhertiance
+     <p id="inhertiance"></p>
+
+     <script>
+         class car{
+             constructor(brand){
+                this.carname = brand;
+             }
+             present(){
+                 return "i have a" + " " + this.carname;
+             }
+         }
+         class model extends car{
+             constructor(brand, model){
+                super(brand);
+                this.model = model;
+             }
+             show(){
+                 return  " " + this.present() + " " + "it is a"  + " " + this.model;
+             }
+         }
+
+         let mycar = new model ("BMW", "911 turbo");
+
+         document.getElementById("inhertiance").innerHTML = mycar.show();
+     </script>-->
+
+
+     <!--callback
+     <p id="callbacks"></p>
+
+     <script>
+         function mydisplayer(sum){
+             document.getElementById("callbacks").innerHTML  = sum;
+         }
+
+         function myfirst(){
+             mydisplayer("hello");
+         }
+
+         function mysecond(){
+             mydisplayer("goodbye");
+         }
+
+         myfirst();// it will run my second but if we reverse then it will say fiirst
+         mysecond();
+     </script>-->
+
+
+     <!--HTML DOM method
+     <p id="htmldom">Hello King</p> // will only say what it is in js not in html
+     <script>
+         document.getElementById("htmldom").innerHTML = "Hello World";
+     </script>-->
+
+    <!--html dom
+
+    <script>
+        document.write(Date());
+    </script>
+
+
+    <p id="change">hello king</p>
+    <script>
+        document.getElementById("change").innerHTML = "hello world";
+    </script>
+
+
+    <img src="" alt="" id="image">
+    <script>
+        document.getElementById("image").src = "/HTML5/HTML5/11. Project Files/02. Finished Files/img/course-01.jpg";
+    </script>-->
+
+
+    <!--css changig in js
+    <p id="p1">Shubham</p>
+    <p id="p2">Shubham</p>
+    <script>
+        document.getElementById("p1").style.color = "red";
+        document.getElementById("p2").style.fontFamily = "cursive";
+    </script>-->
+
+
+
+    <!--animation 
+    <p><button onclick="mymove()">Click me</button></p>
+
+    <div id="container" style="width: 400px;
+    height : 400px;
+    position: absolute;
+    background: yellow;">
+        <div id="anime" style="width: 30px;
+        height : 30px;
+        position: absolute;
+        background : red;"></div>
+    </div>
+
+    <script>
+        var id = null;
+
+        function mymove(){
+            var elem = document.getElementById("anime");
+            var pos = 0;
+            clearInterval(id);
+            id = setInterval(frame , 5);
+
+            function frame(){
+                if(pos == 350){
+                    clearInterval(id);
+                }
+                else{
+                    pos++;
+                    elem.style.top = pos + "px";
+                    elem.style.left = pos + "px";
+                }
+            }
+        }
+    </script>-->
+
+
+    <!--events
+    <h1 onclick="this.innerHTML='thanks for clicking on me'">click me</h1>
+-->
+
+
+    <!--add event listener
+    <button id="btn">Click me</button>
+    <p id="hello"></p>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", displayDate);
+        function displayDate(){
+            document.getElementById("hello").innerHTML = Date();
+        }
+    </script>-->
+
+    <!--node
+    used for madding new elemnst by using js in html
+    <div class="div1">
+        <p class="p1">This is text</p>
+        <p class="p2">This is more text</p>
+    </div>
+
+    <script>
+        var para = document.createElement("p");
+        var node = document.createTextNode("this is new text");
+        para.appendChild(node);
+        var element = document.getElementById("div1");
+        element.appendChild(para);
+    </script>-->
+
+
+    <!--AJAX
+    <div class="ajax">
+        <h2>Change this text</h2>
+        <button type="button" onclick="loadback()" name="button">click here</button>
+    </div>
+    <script>
+        function loadback(){
+            var xhttp = XMLHttpRequest();
+            xhttp.onreadystatechnage = function() {
+                if(this.readystate == 44 && this.status == 200){
+                    document.getElementById("ajax").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "ajax_info.txt", true);
+            xhttp.send();
+        }
+    </script>-->
+
+    <!--XML http request
+    <div class="ajax">
+        <h2>Change this text</h2>
+        <button type="button" onclick="loadback()" name="button">click here</button>
+    </div>
+    <script>
+        function loadback(){
+            var xhttp = XMLHttpRequest();
+            xhttp.onreadystatechnage = function() {
+                if(this.readystate == 44 && this.status == 200){
+                    document.getElementById("ajax").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "ajax_info.txt", true);// get request
+            xhttp.send();
+        }
+    </script>-->
+
+
+    <!--request
+    <button type="button">Click me</button>
+    <script>
+        xhttp.open("GET", "ajax_info.txt", true);// get request
+        xhttp.open("POST", "ajax_info.txt", true);// post request for sending large files
+    </script>-->
+
+
+    <!--application file
+    <button type="button" onclick="load_doc()">Click here</button>
+    <br>
+    <table id="menu"></table>
+    <script>
+        function load_doc(){
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    myfunction(this);
+                }
+            };
+            xhttp.open("GET", "cd_catalog.xml", true);
+            xhttp.send();
+        }
+        function myfunction(xml){
+            var i;
+            var xmlDoc = xml.responseXML;
+            var fasle = "<tr> <th>artist<th> <th>title<th> <tr>";
+            var x = document.getElementsByTagName("CD");
+            for(i=0; i < x.length; i++){
+                tabble += "<tr><td>" = x[i].getElementsByTagName("artist")[0].childNodes[0].nodeValue + "</td><td>" + x[i].getElementsByTagName["title"] [0].childNodes[0].nodeValue + "</td><tr>";
+            }
+            document.getElementById("menu").innerHTML = table;
+        }
+    </script>-->
+
+
+    <!--JSON
+    <p id="sample"></p>
+    <script>
+        var myObj, x;
+        myObj ={name: "JOhn", age:30, city: "king"};
+        x = myObj.name;
+        document.getElementById("sample").innerHTML = x;
+    </script>-->
+
+
+    <!--jquerys selectors name 
+    <h1>This is my header</h1>
+    <script>
+        $(document).ready(function(){
+            $("*").css("background" , "red");
+        });
+    </script>-->
+
+
+    <!--jquery id
+    <h1 id="id">Shubham</h1>
+    <script>
+        $(document).ready(function(){
+            $("#id").css("background", "red");
+        });
+    </script>-->
+
+    <!-- class selectors
+    <h1 class="class">Shubham</h1>
+    <script>
+        $(document).ready(function(){
+            $(".class").css("background", "blue");
+        });
+    </script>-->
+
+    <!--first sselector selectes first
+    <p>Shubha,</p>
+    <p>loreem2 ejj</p>
+    <p>Lorem, ipsum dolor.</p>
+
+    <script>
+        $(document).ready(function(){
+            $("p").css("background", "pink");
+        });
+    </script>-->
+
+    <!--last selectors slecetes last one
+    <p>Shubha,</p>
+    <p>loreem2 ejj</p>
+    <p>Lorem, ipsum dolor.</p>
+
+    <script>
+        $(document).ready(function(){
+            $("p").css("background", "pink");
+        });
+    </script>-->
+
+    
+    <!--even and odd selectors are same
+    <p>Shubha,</p>
+    <p>loreem2 ejj</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Shubha,</p>
+    <p>loreem2 ejj</p>
+    <p>Lorem, ipsum dolor.</p>
+
+    <script>
+        $(document).ready(function(){
+            $("p:even").css("background", "yellow");
+        });
+    </script>-->
+
+
+    <!--first child
+    <div class="child">
+        <p>shubham</p>
+    </div>
+    <div class="parent">
+        <p>shubham date</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("p:first-child").css("background", "yellow");
+        });
+    </script>-->
+
+
+    <!--first-of-type
+    <div class="child">
+        <p>shubham</p>
+        <p>shubham date</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p:first-of-type").css("background", "blue");
+        });
+    </script>-->
+
+    <!--last-child
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p:last-child").css("background", "pink");
+        });
+    </script>-->
+
+    <!--last-of-type
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p:last-of-type").css("background", "pink");
+        });
+    </script>-->
+
+    <!--nth-child
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("p:nth-child(3)").css("background", "yellow");
+        });
+    </script>-->
+
+    <!--nth-last-child 
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p:nth-last-child(2)").css("background", "blue");
+        });
+    </script>-->
+
+    <!--nth-last-of-type
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p:nth-last-of-type(2)").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--only-child
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="parent3">
+        <p>shubham</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p:only-child").css("background", "blue");
+        });
+    </script>-->
+
+    <!--only-of-type
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="parent3">
+        <p>shubham</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p:only-of-type").css("background", "blue");
+        });
+    </script>-->
+
+    <!--parent > child
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="parent3">
+        <p>shubham</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("div > p").css("background", "blue");
+        });
+    </script>-->
+
+    <!--parent descendant
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+        <div class="parent">
+            <p>shubham</p>
+        </div>
+    </div>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="parent3">
+        <p>shubham</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("div p").css("background", "blue");
+        });
+    </script>-->
+
+    <!--element+next
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <p>hiii</p>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="parent3">
+        <p>shubham</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("div + p").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--element+next
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <p>hiii</p>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="parent3">
+        <p>shubham</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("div ~ p").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--eq
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <p>hiii</p>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="parent3">
+        <p>shubham</p>
+    </div>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+            $("p:eq(2)").css("background", "blue");
+        });
+    </script>-->
+
+    <!--gt
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <p>hiii</p>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="parent3">
+        <p>shubham</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("p:gt(2)").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--it
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <p>hiii</p>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="parent3">
+        <p>shubham</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p:it(2)").css("background", "blue");
+        });
+    </script>-->
+
+    <!--not
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <p>hiii</p>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="parent3">
+        <p>shubham</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p:not(.child2)").css("background", "blue");
+        });
+    </script>-->
+
+    <!--header
+        <h1>header1</h1>
+    <script>
+        $(document).ready(function(){
+            $(":header").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--animated
+    <button class="btn">change color</button>
+    <div style="background: blue;">div1</div>
+    <div style="background: green;">div1</div>
+    <div style="background: yellow;">div1</div>
+    <script>
+        $(document).ready(function(){
+            function aniDiv(){
+                $("div:eq(0)").animate({width: "50"},"slow");
+                $("div:eq(0)").animate({width: "100"},"slow", aniDiv);
+            }
+            aniDiv();
+            $(".btn").click(function(){
+                $(":animated").css("background", "red");
+            });
+        });
+    </script>-->
+
+
+    <!--focus
+    <input type="text">
+    <script>
+        $(document).ready(function(){
+            $(":focus").focus();
+            $(":focus").css("background","yellow");
+        });
+    </script>-->
+
+
+    <!--contains
+    <div class="child1">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <p>hiii</p>
+    <div class="child2">
+        <p>Shubham</p>
+        <p>Shubham date</p>
+        <p>Shubham Pandurang Date</p>
+    </div>
+    <div class="parent3">
+        <p>shubham</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p:contains(is)").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--has
+    <p>hello<span>hi</span></p>
+    <script>
+        $(document).ready(function(){
+            $("p:has(span))").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--empty
+    <p></p>
+    <table>
+        <tr>
+            <td>hello</td>
+        </tr>
+        <tr>
+            hi
+        </tr>
+    </table>
+    <script>
+        $(document).ready(function(){
+            $(":empty").css("background", "blue");
+        });
+    </script>-->
+
+    <!--parent
+    <table>
+        <tr>
+            <td>hello</td>
+            <td>king</td>
+        </tr>
+        <tr>
+            <td>hi</td>
+            <td>king2</td>
+        </tr>
+    </table>
+    <script>
+        $(document).ready(function(){
+            $("td:parent").css("background", "blue");
+        });
+    </script>-->
+
+    <!--hidden
+    <table>
+        <tr>
+            <td>hello</td>
+            <td>king</td>
+        </tr>
+        <tr>
+            <td>hi</td>
+            <td>king2</td>
+            <td>shubham</td>
+        </tr>
+    </table>
+    <p style="display: none;">this is text</p>
+    <script>
+        $(document).ready(function(){
+            $("p:hidden").show(3500);
+        });
+    </script>-->
+
+
+    <!--visible
+    <table>
+        <tr>
+            <td>hello</td>
+            <td>king</td>
+        </tr>
+        <tr>
+            <td>hi</td>
+            <td>king2</td>
+            <td>shubham</td>
+        </tr>
+    </table>
+    <p style="display: none;">this is text</p>
+    <script>
+        $(document).ready(function(){
+            $("p:visible").css("background","yellow"));
+        });
+    </script>-->
+
+    <!--root
+    <script>
+        $(document).ready(function(){
+            $(":root").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--language
+    <p lang="it">i live in india</p>
+    <script>
+        $(document).ready(function(){
+            $("p:language").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--attribute
+    <ul id="choose">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+            $("id").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--attribut value
+    <ul id="choose">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+            $("id").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--attribut value!
+    <p class="intro">Shubham Date</p>
+    <script>
+        $(document).ready(function(){
+            $("p:[class!='intro']").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--attribut value$
+    <a href=www.google.com">google.com</a>
+    <script>
+        $(document).ready(function(){
+            $("a[href='.com']").css("background", "blue");
+        });
+    </script>-->
+
+    
+    <!--attribut value|
+    <p title="tommorow">hi everyone</p>
+    <p title="Tommorow">hi everyone</p>
+    <script>
+        $(document).ready(function(){
+            $("p[title|='tommorow']").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--attrtibute value^
+    <input type="text" name="canacda">
+    <input type="text" name="usa">
+    <input type="text" name="india">
+    <script>
+        $(document).ready(function(){
+            $("input[name='usa']").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--attribut value~
+    <p title="tommorow">hi everyone</p>
+    <p title="Tommorow">hi everyone</p>
+    <script>
+        $(document).ready(function(){
+            $("input[name~='usa']").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--attribut value*
+    <p title="tommorow">hi everyone</p>
+    <p title="Tommorow">hi everyone</p>
+    <script>
+        $(document).ready(function(){
+            $("input[name*='usa']").css("background", "blue");
+        });
+    </script>-->
+
+    <!--input
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button>
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":input").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--text input
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button>
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":text").css("background", "blue");
+        });
+    </script>-->
+
+    <!--password
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button>
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":password").css("background", "blue");
+        });
+    </script>-->
+
+    <!--radio
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button><br>
+        <input type="radio" name="" id="">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":radio").wrap("<span style='background:red;'>");
+        });
+    </script>-->
+
+    <!--checkbox
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button><br>
+        <input type="radio" name="" id="">
+        <input type="checkbox" name="" id="">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":checkbox").wrap("<span style='background:black;'>");
+        });
+    </script>-->
+
+    <!--submit
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button><br>
+        <input type="radio" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":submit").css("background", "blue");
+        });
+    </script>-->
+
+    <!--reset
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button><br>
+        <input type="radio" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":reset").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--button
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button><br>
+        <input type="radio" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":button").css("background", "blue");
+        });
+    </script>-->
+
+    <!--image
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button><br>
+        <input type="radio" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="submit" value="Submit">
+        <input type="image" src="/HTML5/HTML5/11. Project Files/02. Finished Files/img/course-01.jpg" alt="">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":image").css("background", "blue");
+        });
+    </script>-->
+
+    <!--file
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button><br>
+        <input type="radio" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="submit" value="Submit">
+        <input type="image" src="/HTML5/HTML5/11. Project Files/02. Finished Files/img/course-01.jpg" alt="">
+        <input type="file" name="file" id="">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":file").css("background", "blue");
+        });
+    </script>-->
+    
+    <!--enabled
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button><br>
+        <input type="radio" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="submit" value="Submit">
+        <input type="image" src="/HTML5/HTML5/11. Project Files/02. Finished Files/img/course-01.jpg" alt="">
+        <input type="file" name="file" id="">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":enabled").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--disabled
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button><br>
+        <input type="radio" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="submit" value="Submit">
+        <input type="image" src="/HTML5/HTML5/11. Project Files/02. Finished Files/img/course-01.jpg" alt="">
+        <input type="file" name="file" id="">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":disabled").css("background", "blue");
+        });
+    </script>-->
+
+    <!--selected
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button><br>
+        <input type="radio" name="" id="">
+        car:
+        <select>
+            <option value="">ford</option>
+            <option value="">bmw</option>
+            <option selected="selected" value="">audi</option>
+        </select>
+        <input type="checkbox" name="" id="">
+        <input type="submit" value="Submit">
+        <input type="image" src="/HTML5/HTML5/11. Project Files/02. Finished Files/img/course-01.jpg" alt="">
+        <input type="file" name="file" id="">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":selected").css("background", "blue");
+        });
+    </script>-->
+
+    <!--checked
+    <form action="">
+        Name: <input type="text"><br>
+        password: <input type="password" name="Password" id=""><br>
+        <button type="button">Submit</button><br>
+        <input type="radio" name="" id="">
+        car:
+        <select>
+            <option value="">ford</option>
+            <option value="">bmw</option>
+            <option value="">audi</option>
+        </select>
+        <input type="checkbox" name="" id="">
+        <input type="submit" value="Submit">
+        <input type="image" src="/HTML5/HTML5/11. Project Files/02. Finished Files/img/course-01.jpg" alt="">
+        <input type="file" name="file" id="">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $(":checked").css("background", "blue");
+        });
+    </script>-->
+
+
+    <!--blur event
+    elnter your name: <input type="text">
+    <p>write something </p>
+    <script>
+        $(document).ready(function(){
+            $("input").blur(function(){
+                alert("this input is banned.");
+            });
+        });
+    </script>-->
+
+
+    <!--change event
+    elnter your name: <input type="text">
+    <p>write something </p>
+    <script>
+        $(document).ready(function(){
+            $("input").blur(function(){
+                alert("the text has been change.");
+            });
+        });
+    </script>-->
+
+    <!--click event
+    <p>write something </p>
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                alert("click on p single click.");
+            });
+        });
+    </script>-->
+
+
+    <!--dbclick event
+    <p>write something </p>
+    <script>
+        $(document).ready(function(){
+            $("p").dbclick(function(){
+                alert("clicking p double click");
+            });
+        });
+    </script>-->
+
+    <!--focused event
+    <input type="text">
+    <span style="display: none;">Nice to meet you</span>
+    <p>click on input for focused</p>
+    <script>
+        $(document).ready(function(){
+            $("p").focus(function(){
+                $("span").css("display", "inline").fadeOut(2000);
+            });
+        });
+    </script>-->
+
+    <!--focusedin event
+    <div>
+        first name: <input type="text"><br>
+        last name: <input type="text">
+    </div>
+    <p>click on input for focus and outside for loosing focus</p>
+    <script>
+        $(document).ready(function(){
+            $("div").focusin(function(){
+                $(this).css("background", "red");
+            });
+            $("div").focusout(function(){
+                $(this).css("background","green");
+            });
+        });
+    </script>-->
+
+    <!--focusedOut event
+    <div>
+        first name: <input type="text"><br>
+        last name: <input type="text">
+    </div>
+    <p>click on input for focus and outside for loosing focus</p>
+    <script>
+        $(document).ready(function(){
+            $("div").focusin(function(){
+                $(this).css("background", "red");
+            });
+            $("div").focusout(function(){
+                $(this).css("background","green");
+            });
+        });
+    </script>-->
+
+    <!--hover event
+    <p>click on input for focus and outside for loosing focus</p>
+    <script>
+        $(document).ready(function(){
+            $("p").hover(function(){
+                $(this).css("background", "red");
+            }, function(){
+                $(this).css("background","green");
+            });
+        });
+    </script>-->
+
+
+    <!--keydown and keyup event
+    enter your name: <input type="text"><br>
+    <p>enter your name and it will change calor on keydown and keyup.</p>
+    <script>
+        $(document).ready(function(){
+            $("input").keydown(function(){
+                $("input").css("background", "red");
+            });
+            $("input").keyup(function(){
+                $("input").css("background", "red");
+            });
+        });
+    </script>-->
+
+
+    <!--keypress events
+    enter your name: <input type="text"><br>
+    <p>Keypress: <span>0</span></p>
+    <script>
+        $(document).ready(function(){
+            $("input").keypress(function(){
+                $("span").text(i == 1);
+            });
+        });
+    </script>-->
+
+    <!--mousedown and mouseup
+    <div class="#">press down and released button over this div elemnts.</div>
+    <script>
+        $(document).ready(function(){
+            $("div").mouseup(function(){
+                $(this).after("<p style='color:green;'>Mouse button released.</p>");
+            });
+            $("div").mousedown(function(){
+                $(this).after("<p style='color:red;'>Mouse button pressed.</p>");
+            });
+        });
+    </script>-->
+
+    <!--mouseenter and mouseleave
+    <div class="#">move the mouse pointer over the p </div>
+    <script>
+        $(document).ready(function(){
+            $("p").mouseenter(function(){
+                $("p").css("background","blue");
+            });
+            $("p").mouseleave(function(){
+                $("p").css("background","yellow");
+            });
+        });
+    </script>-->
+
+    <!--mousemove events
+    <p>mouse is at co-ordianes: <span></span></p>
+    <script>    
+        $(document).ready(function(){
+            $(document).mousemove(function(event){
+                $("span").text(event.pageX + " , " + event.pageY);
+            });
+        });
+    </script>-->
+
+
+    <!--mouseover and mouseout
+    <script>
+        <div class="#">move the mouse pointer over the p </div>
+        $(document).ready(function(){
+            $("p").mouseover(function(){
+                $("p").css("background","blue");
+            });
+            $("p").mouseout(function(){
+                $("p").css("background","yellow");
+            });
+        });
+    </script>-->
+
+    <!--off events
+    <button type="button">Remove the click event handler</button>
+    <script>
+        $(document).ready(function(){
+            $("p").on("click", function(){
+                $(this).css("background","blue");
+            });
+            $("button").click(function(){
+                $("p").off("click");
+            })
+        });
+    </script>-->
+
+    <!--on events
+    <p>click this p</p>
+    <script>
+        $(document).ready(function(){
+            $("p").on("click", function(){
+               alert("the p was clicked");
+            });
+        });
+    </script>-->
+
+
+    <!--animate
+    <button id="btn1" type="button"> animatine height</button>
+    <button id="btn2" type="button">Reset height</button>
+    <div class="box" style="background: red;
+    height:100px;
+    width:100px;
+    margin:10px;"></div>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#box").animate({height: "300px"});
+            });
+            $("#btn2").click(function(){
+                $("#box").animate({height: "100px"});
+            });
+        });
+    </script>-->
+
+
+    <!--clearQueue
+    <button id="start" type="button"> start</button>
+    <button id="stop" type="button">stop</button>
+    <div style="background: red;
+    height:100px;
+    width:100px;"></div>
+    <script>
+        $(document).ready(function(){
+            $("#start").click(function(){
+                $("div").animate({height: "300px"}, 1500);
+                $("div").animate({width: "300px"}, 1500);
+                $("div").animate({height: "100px"}, 1500);
+                $("div").animate({width: "100px"}, 1500);
+            });
+            $("#stop").click(function(){
+                $("div").clearQueue();
+            });
+        });
+    </script>-->
+
+
+
+    <!--delay
+    <button type="button">Click to fadein box with delay</button> <br><br>
+
+    <div id="div1" style="width: 90px;
+    height:90px;
+    display:none;
+    background:red;"></div>
+    <br>
+    <div id="div2" style="width: 90px;
+    height:90px;
+    display:none;
+    background:blue;"></div>
+    <br>
+    <div id="div3" style="width: 90px;
+    height:90px;
+    display:none;
+    background:blueviolet;"></div>
+    <br>
+    <div id="div4" style="width: 90px;
+    height:90px;
+    display:none;
+    background:yellow;"></div>
+    <br>
+    <div id="div5" style="width: 90px;
+    height:90px;
+    display:none;
+    background:greenyellow;"></div>
+    <br>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").delay("slow").fadeIn();
+                $("#div2").delay("fast").fadeIn();
+                $("#div3").delay("fast").fadeIn();
+                $("#div4").delay(2000).fadeIn();
+                $("#div5").delay(4000).fadeIn();
+            });
+        });
+    </script>-->
+
+
+    <!--dequeue
+    <button id="start" type="button"> start</button>
+    <div style="background: red;
+    height:100px;
+    width:100px;"></div>
+    <script>
+        $(document).ready(function(){
+            $("#start").click(function(){
+                var div = $("div");
+                div.animate({height: "300px"},"slow");
+                div.animate({width: "300px"},"slow");
+                div.queue(function(){
+                    div.css("background","blue");
+                    div.dequeue();
+                });
+                div.animate({height: "100px"}, "slow");
+                div.animate({width: "100px"}, "slow");
+            });
+        });
+    </script>-->
+
+
+    <!--fadein and fadeout
+    <p>Hello everyone</p>
+    <button id="btn1">Fade Out</button>
+    <button id="btn2">Fade In</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").fadeOut();
+            });
+            $("#btn2").click(function(){
+                $("p").fadeIn();
+            });
+        })
+    </script>-->
+
+
+    <!--fadeto
+    <button>Fadeto</button>
+    <p>vhange my opacity</p>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").fadeTo(1500, 0.5);
+            });
+        });
+    </script>-->
+
+
+    <!--fadetoggle
+    <button>click for fadein and fadeout</button><br><br>
+    <div id="div1" style="width: 80px;
+    height:80px;
+    background:red;"></div>
+    <br>
+    <div id="div2" style="width: 80px;
+    height:80px;
+    background:blue;"></div>
+    <br>
+    <div id="div3" style="width: 80px;
+    height:80px;
+    background:yellow;"></div>
+    <br>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(4000);
+            });
+        });
+    </script>-->
+
+
+    <!--finish
+    <P>
+    <button id="start">Start</button>
+    <button id="completed">Completed</button>
+    </P>
+
+    <div style="height: 100px;
+    width:100px;
+    background:red;"></div>
+    <script>
+        $(document).ready(function(){
+            $("#start").click(function(){
+                $("div").animate({height: "300px"}, 3000);
+                $("div").animate({width: "300px"}, 3000);
+            });
+            $("#completed").click(function(){
+                $("div").finish();
+            });
+        });
+    </script>-->
+
+    <!--hide
+    <p>
+    <button id="start">Start</button>
+    <button id="hide">hide</button>
+    </p>
+
+    <div style="height: 100px;
+    width:100px;
+    background:red;"></div>
+    <script>
+        $(document).ready(function(){
+            $("#start").click(function(){
+                $("div").animate({height: "300px"}, 3000);
+                $("div").animate({width: "300px"}, 3000);
+            });
+            $("#hide").click(function(){
+                $("div").hide();
+            });
+        });
+    </script>-->
+
+
+    <!--hide
+    <p>
+    <button id="start">Start</button>
+    <button id="show">show</button>
+    </p>
+
+    <div style="height: 100px;
+    width:100px;
+    background:red;"></div>
+    <script>
+        $(document).ready(function(){
+            $("#start").click(function(){
+                $("div").animate({height: "300px"}, 3000);
+                $("div").animate({width: "300px"}, 3000);
+            });
+            $("#show").click(function(){
+                $("div").show();
+            });
+        });
+    </script>-->
+
+
+    <!--slideup and slidedown
+    <p>hello everyone</p>
+    <button class="btn1">Slideup</button>
+    <button class="btn2">Slidedown</button>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+               $("p").slideUp();
+            });
+            $(".btn2").click(function(){
+               $("p").slideDown();
+            });
+        });
+    </script>-->
+
+    <!--slidetoggle
+    <p>hello everyone</p>
+    <button class="btn1">Slidetoggle</button>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+               $("p").slideToggle();
+            });
+        });
+    </script>-->
+
+
+    <!--stop
+    <p>hello everyone</p>
+    <button class="btn1">Slidetoggle</button>
+
+    <button id="stop">Stop</button>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+               $("p").slideToggle();
+            });
+            $("#stop").click(function(){
+                $("p").stop();
+            });
+        });
+    </script>-->
+
+<br><br>
+
+    Javascript - used for operating and making interaction websites in frontend and backend also <br><br>
+
+    insert js - 1) by using script tag  <br>
+                2) by using .js file <br><br>
+    
+
+    by id method - coonecting html tag by id method <br>
+    document. method is always used for testing <br>
+    onclick method delete all html file and show output on new page used for testing purpose only <br>
+    window. show output as alert form in window <br>
+    window. print is used for Printing the page <br><br><br>
+
+
+    statements - have do while, if , only if, if-else, switch etc <br><br>
+
+    syntax of js - fixed,variables are two types <br>
+    numbers are written with decimals or it can not <br>
+    strings are text which is written with single/double quotes <br>
+
+    variables used for storing data <br>
+    js used var keyword for declaring it <br>
+    equal sing is used for assinging values it <br><br>
+
+    eg. var x;
+        x = 26; <br>
+
+    arithmetic +-*/ eg are (5 + 25) <br>
+    assignment operator (=)<br><br><br>
+
+
+    comments - used to make code comments by using two slahes // <br><br> 
+
+    variables - used for storing values <br><br>
+
+    let - used for blocks of variables <br>
+    let can be used in place of variables <br><br>
+
+    const - values in js <br><br>
+
+    operators - assign values and add them together <br><br>
+
+    arthemetic - (+-*/%++--) are the operators <br><br>
+
+    asignment operator -  it is =,+=,-=,*=,/=,%= <br><br>
+
+    data types - consists of string,number,boolen,etc <br>
+    typeof "bmw" - string eg <br>
+    typeof "3.15" - number <br>
+    typeof "true" - boolean <br>
+    typeof "x" - u8ndefined <br><br>
+
+    functions - used to perform a particular task <br>
+    only when someone made ot or calls it <br><br>
+
+    objects - contain many values <br><br>
+
+    events - something browsers does or user does <br><br>
+
+    strings - used for storing text <br><br>
+
+    strings methods - <br><br>
+
+    numbers - <br><br>
+
+    nukmber methods - <br><br>
+
+    arrays - store multiple values in a single variable <br><br>
+
+    arrays methods - <br><br>
+
+    array sort method - sorting array <br><br>
+
+    array iteration - calls a function for each array element for numbers <br><br>
+
+    dates - create new date object,string etc <br><br>
+
+    date formats - ISO Date: 2022-07-29 <br>
+    short dateb: 03/09/2022 <br><br>
+    long date : march 10 2022 or 10 mar 2022 <br><br>
+
+    date get methods - getfullYear();
+    getmonth();
+    gethour();
+    getdate();
+    getseconds();
+    getmiliseconds();
+    getTime();
+    getDate();,etc <br><br><br>
+
+   date set methods - setDate(); setYear(); setMinute(); ,etc <br><br>
+
+   math - used ton perform mathematical operations <br><br>
+
+   random - generating random things<br><br>
+
+   booleans - true/false or yes/no etc to find it is true or false with help of condition <br><br>
+
+   comparsions operators - == equal x==5 false <br>
+   === equal value and equal type x===5 true <br>
+   != notequal x != 8 true <br>
+   !== not equal value or not equal type x!== 5 false <br>
+   >= gerater than equal to x >= 5 false <br>
+   <= less than equal to x <= 5 true <br><br><br>
+
+   conditional statements - used to perform different actions based on different conditions <br>
+   if - to specify a block of code to be executed if cond is true <br>
+   else - to specify a block of code to be executed if cond is false <br>
+   if else - to specify a block of code to be executed if first cond is false <br>
+   switch - for alternative block of code to be executed <br><br>
+
+
+   switch conditions - for finding a true conditions in many conditons <br><br>
+
+   loop for statement - <br><br>
+
+   for in loop - <br><br>
+
+   lopp for of - <br><br>
+
+    while loop - if cond is true then only executed <br><br>
+
+    break statement - to jump out of the statement used in switch case <br><br>
+
+    conversion type - <br><br>
+
+    bitwise operators - and(&) ,not(~), xor(^), or(|), zero fill left shift(<<), zero fill right shift(>>>), signed right shift(>>) opertaotrs <br><br>
+
+    regular expressions - search panel used to find text, text replace expersssions by using string method<br><br>
+
+    errors - occures in console  <br><br>
+
+    scope -  determines visibililty of variables ,local and global scope, local give less flrxibilty while
+    global gives more  <br><br>
+
+    hoisting - used defineing variable before function <br><br>
+
+    strict mode - write code in strict mode eg delcarling variable ,etc it hepls us to change
+     errors, layes of security aganist the developer <br><br>
+
+    this keyword - it is global object , used to call an object<br><br>
+
+    arrow function - heipls us to write shorter syntax function <br><br>
+
+    classes - to create class object <br><br>
+
+    JSON - js data notation, often used storing and transporting data <br><br>
+
+    debugging - fixing errors of js <br><br>
+
+    style guide - decoration and method to write names calsses etc  <br><br>
+
+    best practices - minmize the use of global variable in offline and many more <br><br>
+
+    mistakes , performance - <br><br>
+
+    reserved words - abstract,var, char, aruments ,bit float ,etc are reserved words for something <br><br>
+
+    <br><br><br>
+
+    <!--objects-->
+
+    object definitions - everythinh is object in js eg number,boolean,keywords,string ,expression , functions,etc <br><br>
+
+    properties of objects - dlete,adding , changing the new properties by giving value <br><br>
+
+    object method - <br><br>
+
+    object accessors - getter and setter used for this , used for simplicity <br><br>
+
+    object constructors - used with the new keyword which had no value and also adding a new property <br><br>
+
+    object prototypes - adding new properties to object with the help of this prototypes <br><br>
+    
+    ecmascript 5 - baically js5 , <br><br><br>
+
+
+
+    <!--functions-->
+    
+    functions - define with keyword, also with expression,and with finction constructor etc <br>
+
+    parametres functions - <br><br>
+
+    invocation - invokes a function with constructor <br><br>
+
+    call functions - to call an functions , predefined functions <br><br>
+
+    apply method functions - takes arguments while call does not <br><br>
+    
+    function closures - js support nested function <br><br><br>
+
+    <!--calsses-->
+
+    classes - used consructive keyword to make classes <br><br>
+
+    inheritance class - <br><br><br>
+
+    <!--ASYNC-->
+
+    callbacks - used for passing arguments to functions , executed in sequence <br><br>
+
+    asynchronous - settimeout is eg <br><br>
+
+    promises - prodcing a code and calls the consuming the code <br><br>
+
+    async/await - make promises easyb to write, by just adding async we can get promises<br><br><br><br>
+
+    <!-- HTML DOM-->
+
+    html dom - documnet object model , we can create dyanmic model , to cange edit html elements in js<br><br>
+    
+    methods - elimanting, delete , changing of html elemnts in js <br><br>
+
+    documents - changing elements by id , classname , etc <br><br>
+
+    element - finding name by id, classname etc <br><br>
+
+    HTML  - to change the contents of html <br><br>
+
+    css - changing css in js <br><br>
+
+    animations - making ani ations on js <br><br>
+
+    events -  <br><br>
+
+    event listener - used for displaying something <br><br>
+
+    navigation nodes - <br><br>
+
+    collections - collection of html list <br><br>
+
+    node lists - collection of variables <br><br>
+
+    <!--BROWSER BOM-->
+
+    window - cover global objects model eg window.open , window.close etc <br><br>
+
+    screen - object can be written without window prefix eg screen.width, screen.height, screen.pixelDepth<br><br>
+
+    location - object can be used to get current page address url and to redirect the browser to a new page window.pathname etc<br><br>
+
+    history - contains the browsers history for protecting , eg history.back history.for etc <br><br>
+
+    naviagtor- contains information about visitior browser <br><br>
+
+    popupalert - alertbox - to make sure if information comes throgh the user <br>
+    confirm box is used to confirm or verify or accept something <br>
+    a promtbox - is used for the user to input a value before entering a apage <br><br>
+
+    timing - allow execution of code at a specified intervals eg setTimeout and setInterval<br><br>
+
+    cookies - data stored in small files on your computer eg document.cookies <br><br>
+
+    <!--AJAX-->
+
+    ajax - update a page and send it to webserver <br><br>
+
+    xml http - used to update on webserver behind the scenes <br><br>
+
+    request - xml http to send a data to server by post method or get method <br><br>
+
+    xml file - ajax used for ineractive communication btn html file <br><br>
+
+    php - for database server <br><br>
+
+    asp - cooonect with html file,, used for sending request <br><br>
+
+    database - customer function , server page, request page <br><br>
+
+    applications - pulling data from a file <br><br>
+
+
+    <!--JSON-->
+
+    json - javascript notations, changing data from server to server, data is in name/value pairs<br><br>
+
+    data types - string: {name : "king"}; <br> 
+     number: (age: "30"); <br>
+     object : {
+         "employer": {"name":"king", "age": "30, "city":"kshs"}
+     } <br>
+     array:{
+         "employer": {"john","anna", "king"};
+     }
+     <br>
+     boolean:{"sale":true} <br>
+     null : {"middlearner":null} <br><br>
+
+    parse - receving data from server , JSON.parse() and that data becomes js object<br><br>
+
+    stingify - to convert object into string <br><br>
+
+    object - written in keywords or values , surrounded by curly braces, keys can not be string and values should be JSON typestring , number,oject, boolean,<br> key and values are separtated by colon, and pair is by comma<br><br>
+
+    arrays - json array value be of string, number, boolean etc , array values is all of the above plus other like expression, function, dates abd underdefined<br><br>
+
+    php - json php used for backend, JSON_php <br><br>
+
+    HTML - JSON html used for html file , change html with json<br><br>
+
+    JSONP - sending JSON data without hepl of cross domain data <br><br>
+
+    <!--WEB apis-->
+
+    APIs - application programming interfaces, easy synatx for complex code, simplfy complex function etc <br><br>
+
+    history - provides easy method for acces window <br><br>
+
+    web storage APIs - simple syntax for storing and reterving data in browsers <br><br>
+
+    web worker APIs - js running in background <br><br>
+
+    fetch APIs - allow web browsers to make http request to web servers <br><br>
+
+    geolocation - used for getting geographical position of user <br><br>
+
+    <br><br><br><br><br>
+
+    <!--JQUERY-->
+
+    HTML jquery - get text content with myelemnt text <br><br>
+
+    css jquery - this do elemnt.properties  <br><br>
+
+    DOM - <br><br>
+
+    jquery - to make much user js write , make simple js , has html , css ,ajax ,json dominations <br><br>
+
+    jquery download - download library of pase cdn link <br><br>
+
+    by cdn -  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+
+    selectors - allow to selsct html elemsnts by ids class name ,etc <br><br>
+
+    all elemnts selectors - for elements selectors <br><br>
+
+    id selector - by id <br><br>
+
+    class selectors - bt class name <br><br>
+
+    first selectors - first element will select only <br><br>
+
+    last selectors - selectes last one <br><br>
+
+    even selectors - selecte by even method <br><br>
+
+    odd selectors - select by odd method <br><br>
+
+    :first-child selectors - selecting only first chhild <br><br>
+
+    :first-of-type - slectiong same tag of first elemsnt <br><br>
+
+    :last-child - select last child of that element <br><br>
+
+    :last-of-type - selecting last element of same type <br><br>
+
+    :nth-child - slectiong all same type elemnt <br><br>
+
+    :nth-last-child - slectiong nth last child <br><br>
+
+    :nth-last-of-type - selecting nth last of child of same type <br><br>
+
+    :only-child - slecting only child element <br><br>
+
+    :only-of-type - selecting only same type of selectors <br><br>
+
+    parent > child - giving more prefernaces to parent than child <br><br>
+
+    parent descendant - parent under parent <br><br>
+
+    element + next selector - slecting element + his next element <br><br>
+
+    element ~ siblings - emelmnt same of siblings <br><br>
+
+    eq - select the fourth elemnt on list <br><br>
+
+    gt - slectecting highly number<br><br>
+
+    it - select first elemnt in the grp <br><br>
+
+    not - not selecting some elemnt <br><br>
+
+    header - selecting header <br><br>
+
+    animated - to selects anime elemnt <br><br>
+
+    focus - selects the focus element <br><br>
+
+    contains - used for element containing text in a grp <br><br>
+
+    has - select one and more elemnt having inside them<br><br>
+
+    empty - all elemnts which is empty will be selected <br><br>
+
+    parent - slecting all parent elemnt <br><br>
+
+    hidden - selects hidden element <br><br>
+
+    visible- slecting visible elemnt <br><br>
+
+    root - slectects root elements <br><br>
+
+    language - slects language attribute <br><br>
+
+    attribute - selecting attribute <br><br>
+
+    attribute value - slecting attribute value <br><br>
+
+    attribute! value - <br><br>
+
+    attribute$ value - <br><br>
+
+    attribut| value - <br><br>
+
+    attribute^ value - <br><br>
+
+    attribut~ value - <br><br>
+
+    attribute*  value <br><br>
+
+    input - selecting input and buttons elemnnts <br><br>
+
+    text - selecting input type of text <br><br>
+
+    paasword - selecting password type input only <br><br>
+
+    radio - slectecting only radio type input <br><br>
+
+    checkbox - selecting only checkbox type input <br><br>
+
+    submit - slecting only submit ype of input <br><br>
+
+    reset - slecting reset type of input <br><br>
+
+    button - slecting only button elemnt <br><br>
+
+    image - slectecting image type of elemnt <br><br>
+
+    file - selects only file <br><br>
+
+    enabled - slecting enabled type input <br><br>
+
+    diabled - diabling all elemnt <br><br>
+
+    selected - selecting all selected elements <br><br>
+
+    checked - selecting checked elements <br><br><br>
+
+    <!--events in jquery-->
+
+    blur() - used for making blur events <br><br>
+
+    change() - used for changing event , works on input, textarea and forms  <br><br>
+
+    click() - used for click event <br><br>
+
+    dbclick() - used for double click event <br><br>
+
+    focus() - triggers focus elemnt <br><br>
+
+    focusin() - elements inside <br><br>
+
+    focusOut() - focusing out elemnts <br><br>
+
+    hover() - hovering an elements <br><br>
+
+    keydown() - trrigers keydown <br><br>
+
+    keyup() - triggrs keyup <br><br>
+
+    keypress() - used for keypress <br><br>
+
+    live() - used for triggesr live , removed from jquery<br><br>
+
+    load() - to handle load event , removed from jquery <br><br>
+
+    mousedown() - for mousedown <br><br>
+
+    mouseenter() - onclicking mouseenter <br><br>
+
+    mousemove() - hovering over an elements <br><br>
+
+    mouseOut() - when mouse leaves elements <br><br>
+
+    off() - removes off elemnts <br><br>
+
+    onload() - triggers from onload, removed from jquery <br><br><br>
+
+    <!--effects in jquery-->
+
+    animate() - for custom animations in js <br><br>
+
+    clearQueue() - removes all unwnated function from selected function <br><br>
+
+    delay() - delay all elements <br><br>
+
+    dequeue() - removes the next function and execute the function <br><br>
+
+    fadein() - making elemnt invisible <br><br>
+
+    fadeTo() - does opacity to elements <br><br>
+
+    fadetoggle() - toggele btns fadein and fadeout <br><br>
+
+    finish() - stops animations for selected elemnents <br><br>
+
+    hide() - hides the selected elements <br><br>
+
+    queue() - shows the elements to be excuted in line <br><br>
+
+    show() - shows hide elemnts <br><br>
+
+    slideDown() and slideup() - slides down and up elements , used for hamburger menu<br><br>
+
+    slidetoggle() - toggles btn slidedown and slideup <br><br>
+
+    stop() - used to stop elements in animations <br><br>
+
+    toggle() - used to toggle btn something or elements and animations<br><br><br>
+
+
+    <!--htmls/css methods-->
+
+    addclass() - addd one or more class name to the selected elements in js<br><br>
+
+    after() - insert content after selected elements <br><br>
+
+    append() - inserdtd content at the end of a selected elements <br><br>
+
+    appendto() - insert html elements at the end selected elements <br><br>
+
+    attr() - sets or returns attribute values <br><br>
+
+    before() - insert content before selected items <br><br>
+
+    clone() - makes copy of selected items <br><br>
+
+    css() - sets or return more style property <br><br>
+
+    empty() - removes all child nodes from content <br><br>
+
+    hasClass() - checks if any elements has sepecfied class name <br><br>
+
+    height() - sets or return height <br><br>
+
+    html() - sets or return html values <br><br>
+
+    prpo() - sets or returns prpoerty values <br><br>
+
+    remove() - removes the selected elemnts includinhg data and events <br><br>
+
+    toggleClass() - toggle btn adding or removing class of elements <br><br>
+    <br><br><br>
+
+    <!--BOOTSTRAP 4-->
+
+    bootstrap - free fontend framework , templates, easy to make responsibve websites <br><br>
+
+    download - download or use cdn 
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+
+
+    <!-- CSS only -->
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">-->
+    <br><br>
+
+    
+
+
+
+    
+
+</body>
+</html>
